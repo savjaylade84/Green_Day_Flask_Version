@@ -1,0 +1,120 @@
+.about {
+  width: auto;
+  height: auto;
+  position: absolute;
+  background-image: url("/static/images/gd2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-origin: border-box;
+}
+
+.author {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  inset: 0;
+  z-index: 1;
+}
+
+.card {
+  width: 90%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  position: absolute;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  margin: 15vh auto auto auto;
+  padding: 0.5rem 1rem;
+  color: #dbd7d7;
+  font-size: regular;
+  font-weight: 600;
+}
+
+.profile-pic > img {
+  padding: 0.5rem 0.5rem;
+  width: 12rem;
+  height: 12rem;
+  margin: 1.5em auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #258034;
+  -webkit-transform: rotate(5deg);
+          transform: rotate(5deg);
+  -webkit-box-shadow: 0.2rem 0.2rem 0.2rem #1f1f1f;
+          box-shadow: 0.2rem 0.2rem 0.2rem #1f1f1f;
+  -webkit-transition: -webkit-transform 1.5s ease;
+  transition: -webkit-transform 1.5s ease;
+  transition: transform 1.5s ease;
+  transition: transform 1.5s ease, -webkit-transform 1.5s ease;
+}
+
+.information {
+  background-color: #258034;
+  padding: 0.5rem 1rem;
+  margin: 0.7rem auto;
+  background-color: #258034;
+  -webkit-box-shadow: 0.2rem 0.2rem 0.2rem #1f1f1f;
+          box-shadow: 0.2rem 0.2rem 0.2rem #1f1f1f;
+  font-size: medium;
+  -webkit-transition: -webkit-box-shadow 1.5s ease;
+  transition: -webkit-box-shadow 1.5s ease;
+  transition: box-shadow 1.5s ease;
+  transition: box-shadow 1.5s ease, -webkit-box-shadow 1.5s ease;
+}
+
+.contact a {
+  background-color: #258034;
+  padding: 1rem 0.5rem;
+  margin: 1.5rem auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #22662b;
+  -webkit-box-shadow: 0.5rem 0.5rem 0.3rem #1f1f1f;
+          box-shadow: 0.5rem 0.5rem 0.3rem #1f1f1f;
+  text-align: center;
+  color: #dbd7d7;
+  text-transform: capitalize;
+  font-weight: 800;
+  letter-spacing: 1px;
+  -webkit-transition: -webkit-box-shadow 800ms ease;
+  transition: -webkit-box-shadow 800ms ease;
+  transition: box-shadow 800ms ease;
+  transition: box-shadow 800ms ease, -webkit-box-shadow 800ms ease;
+}
+
+.contact a:hover {
+  -webkit-box-shadow: 0.35rem 0.35rem 0.2rem #1f1f1f;
+          box-shadow: 0.35rem 0.35rem 0.2rem #1f1f1f;
+  -webkit-transition: -webkit-box-shadow 800ms ease;
+  transition: -webkit-box-shadow 800ms ease;
+  transition: box-shadow 800ms ease;
+  transition: box-shadow 800ms ease, -webkit-box-shadow 800ms ease;
+  background-color: #7e2323;
+  -webkit-transition: background-color 800ms ease;
+  transition: background-color 800ms ease;
+}
+
+.contact a:active {
+  -webkit-box-shadow: 0.2rem 0.2rem 0.1rem #1f1f1f;
+          box-shadow: 0.2rem 0.2rem 0.1rem #1f1f1f;
+  -webkit-transition: -webkit-box-shadow 800ms ease;
+  transition: -webkit-box-shadow 800ms ease;
+  transition: box-shadow 800ms ease;
+  transition: box-shadow 800ms ease, -webkit-box-shadow 800ms ease;
+}
+
+@media screen and (min-width: 701px) {
+  .card {
+    width: 25rem;
+  }
+}
+/*# sourceMappingURL=about.css.map */

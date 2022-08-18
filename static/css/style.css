@@ -1,0 +1,332 @@
+* {
+  margin: 0;
+  padding: 0;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  -webkit-user-select: none !important;
+     -moz-user-select: none !important;
+      -ms-user-select: none !important;
+          user-select: none !important;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+htmL {
+  -webkit-box-sizing: content-box !important;
+          box-sizing: content-box !important;
+  overflow: auto;
+  scroll-behavior: smooth;
+}
+
+htmL body {
+  position: absolute;
+  background-color: #dbd7d7;
+  height: 100vh;
+}
+
+a {
+  text-decoration: none !important;
+  font-style: none !important;
+  cursor: pointer !important;
+}
+
+li {
+  list-style: none;
+}
+
+.nav-button, .nav-button > p {
+  cursor: pointer;
+}
+
+nav {
+  height: auto;
+  width: auto;
+  position: fixed;
+  z-index: 1;
+}
+
+.dots {
+  display: none;
+}
+
+.nav-menu {
+  height: auto;
+  width: auto;
+  position: relative;
+}
+
+.logo {
+  color: #dbd7d7;
+  font-size: large;
+  padding: 1rem;
+  font-weight: 600;
+}
+
+.logo .logo-text span p {
+  vertical-align: middle;
+}
+
+.nav-button > p {
+  font-size: medium;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.nav-button > p a {
+  color: #dbd7d7;
+}
+
+.nav-button > p::first-letter {
+  font-size: x-large;
+}
+
+a, .nav-button > p {
+  text-decoration: none;
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+}
+
+footer {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  top: 100;
+  bottom: 0;
+  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  vertical-align: middle;
+  padding: 2vh 0;
+  z-index: 99;
+}
+
+footer p {
+  color: #1f1f1f;
+  font-size: small;
+  width: 60%;
+  font-weight: 700;
+  margin: auto;
+}
+
+footer p a {
+  font-weight: 800;
+  color: #8d0f0f;
+  padding: 0rem 0.5rem;
+}
+
+@media screen and (max-width: 700px) {
+  nav {
+    z-index: 2;
+  }
+  .nav-menu {
+    height: auto;
+    width: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    -webkit-transition: all 800ms;
+    transition: all 800ms;
+    position: relative;
+    background-color: #22662b;
+    -webkit-box-shadow: 1px 2.5px 1px rgba(0, 0, 0, 0.6);
+            box-shadow: 1px 2.5px 1px rgba(0, 0, 0, 0.6);
+  }
+  .nav-button {
+    width: auto;
+    height: auto;
+    cursor: pointer;
+    list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    isolation: isolate;
+    position: relative;
+    background-color: #22662b;
+  }
+  .nav-mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    width: 100%;
+    background-color: #3a8025;
+  }
+  .dots {
+    display: block;
+    padding: 1.2rem;
+    cursor: pointer;
+  }
+  .dots .dot1, .dots .dot2, .dots .dot3 {
+    height: 0.05rem;
+    width: 0.05rem;
+    padding: 0.15rem 0.15rem;
+    border-radius: 100%;
+    margin: 0.25rem 0;
+    background-color: #dbd7d7;
+  }
+  .nav-button::before {
+    background-color: #22662b;
+  }
+  .nav-button-text > a {
+    color: #dbd7d7;
+  }
+  .nav-button > p {
+    width: 100%;
+    height: 100%;
+    padding: 2em;
+    margin: auto;
+    font-size: regular;
+  }
+  .nav-button::before {
+    content: '';
+    width: auto;
+    height: auto;
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+    -webkit-transform-origin: right;
+            transform-origin: right;
+    -webkit-transition: -webkit-transform 800ms;
+    transition: -webkit-transform 800ms;
+    transition: transform 800ms;
+    transition: transform 800ms, -webkit-transform 800ms;
+    font-size: medium;
+  }
+  .nav-button:hover::before,
+  .nav-button:focus::before,
+  .nav-button:active::before {
+    color: #1f1f1f !important;
+    -webkit-transform: scale(0, 1);
+            transform: scale(0, 1);
+    -webkit-transform-origin: right;
+            transform-origin: right;
+    -webkit-transition: color 800ms;
+    transition: color 800ms;
+    -webkit-transition: -webkit-transform 800ms;
+    transition: -webkit-transform 800ms;
+    transition: transform 800ms;
+    transition: transform 800ms, -webkit-transform 800ms;
+  }
+}
+
+@media screen and (min-width: 701px) {
+  .logo-text span {
+    text-align: center;
+  }
+  .logo-text span p {
+    width: 10rem;
+    background-color: #3a8025;
+    text-shadow: 0.1rem 0.1rem 0.1rem #1f1f1f;
+    -webkit-box-shadow: 0.2rem 0.2rem 0.2rem #1f1f1f;
+            box-shadow: 0.2rem 0.2rem 0.2rem #1f1f1f;
+    padding: 1rem;
+  }
+  .nav-menu-container {
+    position: absolute;
+    padding: 1.5rem 1rem 0 0;
+  }
+  .nav-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -ms-flex-line-pack: distribute;
+        align-content: space-around;
+  }
+  .nav-button {
+    padding: 0.5rem 1rem;
+    margin: 0 1rem;
+    background-color: #22662b;
+    -webkit-box-shadow: 0.45rem 0.45rem 0.45rem #1f1f1f;
+            box-shadow: 0.45rem 0.45rem 0.45rem #1f1f1f;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    -webkit-transition: -webkit-box-shadow 300ms ease;
+    transition: -webkit-box-shadow 300ms ease;
+    transition: box-shadow 300ms ease;
+    transition: box-shadow 300ms ease, -webkit-box-shadow 300ms ease;
+    -webkit-transition: background-color 300ms ease;
+    transition: background-color 300ms ease;
+  }
+  .nav-button p, .nav-button p a {
+    width: auto;
+    height: auto;
+  }
+  .nav-button:nth-child(odd) {
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
+    -webkit-transition: -webkit-transform 300ms ease;
+    transition: -webkit-transform 300ms ease;
+    transition: transform 300ms ease;
+    transition: transform 300ms ease, -webkit-transform 300ms ease;
+  }
+  .nav-button:nth-child(even) {
+    -webkit-transform: rotate(-2deg);
+            transform: rotate(-2deg);
+    -webkit-transition: -webkit-transform 300ms ease;
+    transition: -webkit-transform 300ms ease;
+    transition: transform 300ms ease;
+    transition: transform 300ms ease, -webkit-transform 300ms ease;
+  }
+  .nav-button::before {
+    background-color: #22662b;
+    -webkit-transition: -webkit-transform 1.5s;
+    transition: -webkit-transform 1.5s;
+    transition: transform 1.5s;
+    transition: transform 1.5s, -webkit-transform 1.5s;
+  }
+  .nav-button:hover::before,
+  .nav-button:focus::before,
+  .nav-button:active::before {
+    -webkit-transition: -webkit-transform 1.5s;
+    transition: -webkit-transform 1.5s;
+    transition: transform 1.5s;
+    transition: transform 1.5s, -webkit-transform 1.5s;
+  }
+  .nav-button:hover {
+    background-color: #8d0f0f;
+    -webkit-box-shadow: 0.3rem 0.3rem 0.3rem #1f1f1f;
+            box-shadow: 0.3rem 0.3rem 0.3rem #1f1f1f;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    -webkit-transition: background-color 300ms ease ,-webkit-box-shadow 300ms ease ,-webkit-transform 300ms ease;
+    transition: background-color 300ms ease ,-webkit-box-shadow 300ms ease ,-webkit-transform 300ms ease;
+    transition: background-color 300ms ease ,box-shadow 300ms ease ,transform 300ms ease;
+    transition: background-color 300ms ease ,box-shadow 300ms ease ,transform 300ms ease ,-webkit-box-shadow 300ms ease ,-webkit-transform 300ms ease;
+  }
+  .nav-button:active {
+    -webkit-box-shadow: 0.2rem 0.2rem 0.2rem #1f1f1f;
+            box-shadow: 0.2rem 0.2rem 0.2rem #1f1f1f;
+    -webkit-transition: background-color 300ms ease;
+    transition: background-color 300ms ease;
+    -webkit-transition: -webkit-box-shadow 300ms ease;
+    transition: -webkit-box-shadow 300ms ease;
+    transition: box-shadow 300ms ease;
+    transition: box-shadow 300ms ease, -webkit-box-shadow 300ms ease;
+  }
+}
+/*# sourceMappingURL=style.css.map */

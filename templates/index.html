@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div class="homepage">
+        <div class="intro">
+            <p class="intro-text">Welcome Greenday Fan</p>
+            <p class="intro-text">let's Rock n Roll</p>
+        </div>
+        <div>
+            <img src="{{url_for('static',filename='images/gd2.png')}}" alt="billy guitar" class="guitar">
+        </div>
+    </div>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/index.css')}}" defer>
+{% endblock %}
+
+{% block footer %}
+    <div>
+        <span>
+            <p>
+                Created by <a target="_blank" rel="noopener noreferrer" href="{{url_for('github')}}">savjaylade84</a>
+            </p>
+        </span>
+    </div>
+{% endblock %}

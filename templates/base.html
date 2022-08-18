@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Green Day Fanpage</title>
+</head>
+<body>
+
+    <link rel="stylesheet" href="{{url_for('static',filename='css/style.css')}}" defer>
+    <nav>
+        <div class="nav_main">
+            <div class="nav-mobile">
+                <div class="logo">
+                    <span class="logo-text">
+                        <span>
+                            <p>
+                                Greenday Fanpage
+                            </p>
+                        </span>
+                    </span>
+                </div>
+                <div class="dots">
+                    <div class="dot1"></div>
+                    <div class="dot2"></div>
+                    <div class="dot3"></div>
+                </div>
+            </div>
+            <div class="nav-menu-container">
+                <div class="nav-menu">
+                    <li class="nav-button">
+                        <p class="nav-button-text"> 
+                            <a href="{{url_for('home')}}">Home</a>
+                        </p>
+                    </li>
+                    <li class="nav-button">
+                        <p class="nav-button-text">
+                            <a href="{{url_for('music')}}">Music</a>
+                        </p>
+                    </li>
+                    <li class="nav-button">
+                        <p class="nav-button-text">
+                            <a href="{{url_for('gallery')}}">Gallery</a>
+                        </p>
+                    </li>
+                    <li class="nav-button">
+                        <p class="nav-button-text">
+                            <a href="{{url_for('about')}}">About</a>
+                        </p>
+                    </li>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+        {% block content%}
+        {% endblock %}
+
+    <footer>
+        {% block footer %}{% endblock %}
+    </footer>
+
+    <script src="{{url_for('static',filename='javascript/main.js')}}"></script>
+
+</body>
+</html>

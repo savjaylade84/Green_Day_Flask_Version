@@ -1,0 +1,296 @@
+
+// color pallette
+$red: rgb(141, 15, 15);
+$dark-green:rgb(34, 102, 43);
+$green: rgb(58, 128, 37);
+$black: rgb(31, 31, 31);
+$white: rgb(219, 215, 215);
+
+*{
+	margin:0;
+	padding:0;
+	top:0;
+	bottom:0;
+	left:0;
+  right:0;
+ user-select: none !important;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ 
+}
+
+htmL{
+ box-sizing: content-box !important;
+ overflow: auto;
+ scroll-behavior: smooth;
+ body{
+  position:absolute;
+  background-color: $white;
+  height:100vh;
+  }
+}
+
+a{
+  text-decoration: none !important;
+  font-style: none !important;
+  cursor: pointer !important;
+}
+
+li{
+  list-style: none;
+}
+
+ 
+.nav-button,.nav-button > p{ 
+  cursor: pointer;
+} 
+
+nav{
+  height:auto;
+  width: auto;
+  position:fixed;
+  z-index: 1;
+}
+
+.dots{
+  display: none;
+}
+
+.nav-menu{
+  height:auto;
+  width: auto;
+  position: relative;
+}
+
+ 
+.logo{
+  color:$white;
+  font-size: large;
+  padding: 1rem;
+  font-weight: 600;
+  .logo-text{
+    span{
+      p{
+        vertical-align:middle;
+      }
+    }
+  }
+}
+
+
+.nav-button > p{
+  font-size: medium;
+  text-align: center;
+  vertical-align: middle;
+  a{
+    color: $white;
+  }
+}
+
+.nav-button>p::first-letter{
+  font-size: x-large;
+}
+
+a,.nav-button > p{
+  text-decoration: none;  
+  font-weight: 700;
+  letter-spacing:0.2rem;
+}
+
+
+ footer{
+  height: fit-content;
+  text-align: center;
+  display: flex;
+  top:100;
+  bottom: 0;
+  position: relative;
+  justify-content: center;
+  align-content: center;
+  vertical-align: middle;
+  padding: 2vh 0;
+  z-index: 99;
+    p{
+      color:$black;
+      font-size: small;
+      width: 60%;
+      font-weight: 700;
+      margin: auto;
+        a{  
+            font-weight: 800;
+            color:$red;
+            padding:0rem 0.5rem;
+        }
+    }
+}
+
+  
+
+
+@media screen and (max-width:700px){
+
+  nav{
+    z-index: 2;
+  }
+
+  .nav-menu{
+    height:auto;
+    width: auto;
+    display: flex;
+    flex-flow: column;
+    transform: translateX(100%) ;
+    transition: all 800ms;
+    position: relative;
+    background-color: $dark-green;
+    box-shadow: 1px 2.5px 1px rgba(0 ,0 ,0,0.6);  
+  }
+  .nav-button{
+    width: auto;
+    height: auto;
+    cursor: pointer;
+    list-style: none;
+    display: flex;
+    isolation: isolate;
+    position: relative;
+    background-color: $dark-green;
+  }
+  
+  .nav-mobile{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    background-color: $green;
+  }
+  
+  .dots{
+    display: block;
+    padding: 1.2rem;
+    cursor: pointer;
+      .dot1,.dot2,.dot3{
+          height: 0.05rem;
+          width: 0.05rem;
+          padding: 0.15rem 0.15rem;
+          border-radius:100%;
+          margin:0.25rem 0;
+          background-color: $white;
+      }
+  }
+
+  .nav-button::before{
+    background-color: $dark-green;
+  }
+
+  
+  .nav-button-text > a{
+    color: $white;
+  
+  }
+  
+  .nav-button > p{
+    width: 100%;
+    height: 100%;
+    padding: 2em;
+    margin: auto;
+    font-size: regular;
+  }
+
+  
+  .nav-button::before{
+    content: '';
+    width: auto;
+    height: auto;
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    transform: scale(1,1);
+    transform-origin: right;
+    transition: transform 800ms;
+    font-size: medium;
+  }
+
+  .nav-button:hover::before,
+  .nav-button:focus::before,
+  .nav-button:active::before{
+    color:$black !important;
+    transform: scale(0,1);
+    transform-origin: right;
+    transition: color 800ms;
+    transition: transform 800ms;
+  }
+  
+
+}
+
+@media screen and (min-width:701px){
+    .logo-text{
+      span{
+        text-align: center;
+          p{
+            width: 10rem;
+            background-color: $green;
+            text-shadow:  0.1rem 0.1rem 0.1rem $black;
+            box-shadow:  0.2rem 0.2rem 0.2rem $black;
+            padding:1rem;
+          }
+      }
+    }
+    .nav-menu-container{
+      position: absolute;
+      padding: 1.5rem 1rem 0 0;
+    }
+    .nav-menu{
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      align-content: space-around;
+    }
+    .nav-button{
+      padding: 0.5rem 1rem;
+      margin: 0 1rem;
+      background-color: $dark-green;
+      box-shadow:0.45rem 0.45rem 0.45rem $black;
+      width: fit-content;
+      transition: box-shadow 300ms ease;
+      transition: background-color 300ms ease;
+    }
+    
+    .nav-button p,.nav-button p a{
+      width: auto;
+      height: auto;
+    }
+
+    .nav-button:nth-child(odd){
+      transform: rotate(5deg);
+      transition: transform 300ms ease;
+    }
+
+    .nav-button:nth-child(even){
+      transform: rotate(-2deg);
+      transition: transform 300ms ease;
+    }
+
+    .nav-button::before{
+      background-color: $dark-green;
+      transition: transform 1.5s;
+    }
+
+    .nav-button:hover::before,
+    .nav-button:focus::before,
+    .nav-button:active::before{
+      transition: transform 1.5s;
+    }
+
+    .nav-button:hover{
+      background-color: $red;
+      box-shadow:  0.3rem 0.3rem 0.3rem $black;
+      transform: rotate(0deg);
+      transition: background-color 300ms ease
+      ,box-shadow 300ms ease ,transform 300ms ease;
+    }
+
+    .nav-button:active{
+      box-shadow:  0.2rem 0.2rem 0.2rem $black;
+      transition: background-color 300ms ease;
+      transition: box-shadow 300ms ease;
+    }
+
+}

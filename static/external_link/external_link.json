@@ -1,0 +1,25 @@
+{
+  "account-link":[
+    {
+      "variable":"github",
+      "type":"github",
+      "account":"savjaylade84"
+    },
+    {
+      "variable":"facebook_page",
+      "type":"facebook-page",
+      "account":"Jisun"
+    },
+    {
+      "variable":"portfolio",
+      "type":"portfolio",
+      "account":"Jisun.github.io"
+    },
+    {
+      "variable":"linkedin",
+      "type":"linkedin",
+      "account":"John Jayson B. De Leon"
+    }
+  ]
+}
+

@@ -1,0 +1,37 @@
+{
+
+        "Thousand Hours":[
+            {
+                "title":"1000 hours",
+                "path":"music/1000_hours/01 - 1,000 Hours.mp3"
+            },{
+                "title":"Dry Ice",
+                "path":"music/1000_hours/02 - Dry Ice.mp3"
+            },{
+                "title":"Only Of You",
+                "path":"music/1000_hours/03 - Only Of You.mp3"
+            },{
+                "title":"The One I Want",
+                "path":"music/1000_hours/04 - The One I Want.mp3"
+            }
+            
+        ],
+        "Revolutionary Radio":[],
+        "God Favorite Band":[],
+        "Slappy":[
+            {
+                "title":"Paper Lanterns",
+                "path":"music/Slappy/01 - Paper Lanterns.mp3"
+            },{
+                "title":"Why Do You Want Him",
+                "path":"music/Slappy/02 - Why Do You Want Him.mp3"
+            },{
+                "title":"409 In Your Coffeemaker",
+                "path":"music/Slappy/03 - 409 In Your Coffeemaker.mp3"
+            },{
+                "title":"Knowledge",
+                "path":"music/Slappy/04 - Knowledge.mp3"
+            }
+        ]
+
+}

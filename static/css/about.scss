@@ -1,0 +1,97 @@
+// color pallette
+$red: rgb(126, 35, 35);
+$dark-green:rgb(34, 102, 43);
+$green: rgb(37, 128, 52);
+$black: rgb(31, 31, 31);
+$white: rgb(219, 215, 215);
+$greenish:rgba(33, 131, 82, 0.699);
+
+
+.about{
+    width: auto;
+    height: auto;
+    position: absolute;
+    background-image: url('/static/images/gd2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-origin: border-box;
+}
+.author{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-content: center;
+    inset: 0; 
+    z-index: 1;
+}
+
+.card{
+    width: 90%;
+    height: fit-content;
+    position: absolute;
+    justify-self: center;
+    margin: 15vh auto auto auto;
+    padding: 0.5rem 1rem;
+    color: $white;
+    font-size: regular;
+    font-weight: 600;
+}
+
+.profile-pic > img{
+    padding: 0.5rem 0.5rem;
+    width:12rem;
+    height: 12rem;
+    margin: 1.5em auto;
+    display: flex;
+    background-color: $green;
+    transform: rotate(5deg);
+    box-shadow:  0.2rem 0.2rem 0.2rem $black;
+    transition: transform 1.5s ease;
+}
+
+.information{
+    background-color: $green;
+    padding: 0.5rem 1rem;
+    margin: 0.7rem auto;
+    background-color: $green;
+    box-shadow:  0.2rem 0.2rem 0.2rem $black;
+    font-size: medium;
+    transition: box-shadow 1.5s ease;
+}
+.contact a{
+    background-color: $green;
+    padding: 1rem 0.5rem;
+    margin: 1.5rem auto;
+    display: flex;
+    background-color: $dark-green;
+    box-shadow:  0.5rem 0.5rem 0.3rem $black;
+    text-align: center;
+    color: $white;
+    text-transform: capitalize;
+    font-weight: 800;
+    letter-spacing: 1px;
+    transition: box-shadow 800ms ease;
+}
+
+.contact a:hover{
+    box-shadow:  0.35rem 0.35rem 0.2rem $black;
+    transition: box-shadow 800ms ease;
+    background-color: $red;
+    transition: background-color 800ms ease;
+}
+
+.contact a:active{
+    box-shadow:  0.2rem 0.2rem 0.1rem $black;
+    transition: box-shadow 800ms ease;
+}
+
+
+@media screen and (min-width:701px){
+    .card{
+        width: 25rem;
+    }
+}
+
+
+
+

@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block content%}
+    <div class="about">
+        <div class="author">
+            <div class="card">
+                <div class="container">
+                    <div class="profile-pic">
+                        <img src="{{url_for('static',filename='images/Selfie_Me.jpg')}}" alt="author profile picture" width="200" height="200" loading ='lazyloading'>
+                    </div>
+                    <div class="information">
+                        <p>         
+                            Hello I'm Jayson the one who created this green day fanpage,
+                            This site is meant for my portfolio also for being fan of green 
+                            day so feel free to look around and listen to green day music.
+                            don't forget to add or follow me to my social media account, if
+                            you're a hr person feel free to look to my portfolio and other 
+                            projects that i have in github.
+                        </p>
+                    </div>
+                    <div class="contact">
+
+                        {% for link in links['account-link']%}
+                                <a target="_blank" rel="noopener noreferrer" href="{{url_for(link.variable)}}">  
+                                    {{link.type}} - {{ link.account }} 
+                                </a>
+                       {% endfor %}
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<link rel="stylesheet" href="{{url_for('static',filename='css/about.css')}}" defer>
+<link rel="stylesheet" href="{{url_for('static',filename='css/index.css')}}" defer>
+{% endblock %}

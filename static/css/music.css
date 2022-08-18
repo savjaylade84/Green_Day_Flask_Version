@@ -1,0 +1,135 @@
+.music-card {
+  padding: 2rem 4rem;
+  background-color: rgba(206, 206, 206, 0.9);
+  margin: 4rem auto;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.music-card:nth-child(1) {
+  -webkit-animation: forwards rotate2 6s;
+          animation: forwards rotate2 6s;
+}
+
+.music-card:nth-child(2) {
+  -webkit-animation: forwards rotate1 6s;
+          animation: forwards rotate1 6s;
+}
+
+@-webkit-keyframes rotate1 {
+  from {
+    -webkit-transform: rotate(40deg) translateX(100%);
+            transform: rotate(40deg) translateX(100%);
+    -webkit-transition: -webkit-transform 2.5s;
+    transition: -webkit-transform 2.5s;
+    transition: transform 2.5s;
+    transition: transform 2.5s, -webkit-transform 2.5s;
+  }
+  to {
+    -webkit-transform: rotate(0deg) translateX(0%);
+            transform: rotate(0deg) translateX(0%);
+    -webkit-transition: -webkit-transform 2.5s;
+    transition: -webkit-transform 2.5s;
+    transition: transform 2.5s;
+    transition: transform 2.5s, -webkit-transform 2.5s;
+  }
+}
+
+@keyframes rotate1 {
+  from {
+    -webkit-transform: rotate(40deg) translateX(100%);
+            transform: rotate(40deg) translateX(100%);
+    -webkit-transition: -webkit-transform 2.5s;
+    transition: -webkit-transform 2.5s;
+    transition: transform 2.5s;
+    transition: transform 2.5s, -webkit-transform 2.5s;
+  }
+  to {
+    -webkit-transform: rotate(0deg) translateX(0%);
+            transform: rotate(0deg) translateX(0%);
+    -webkit-transition: -webkit-transform 2.5s;
+    transition: -webkit-transform 2.5s;
+    transition: transform 2.5s;
+    transition: transform 2.5s, -webkit-transform 2.5s;
+  }
+}
+
+@-webkit-keyframes rotate2 {
+  from {
+    -webkit-transform: rotate(-40deg) translateX(-100%);
+            transform: rotate(-40deg) translateX(-100%);
+    -webkit-transition: -webkit-transform 2.5s;
+    transition: -webkit-transform 2.5s;
+    transition: transform 2.5s;
+    transition: transform 2.5s, -webkit-transform 2.5s;
+  }
+  to {
+    -webkit-transform: rotate(0deg) translateX(0%);
+            transform: rotate(0deg) translateX(0%);
+    -webkit-transition: -webkit-transform 2.5s;
+    transition: -webkit-transform 2.5s;
+    transition: transform 2.5s;
+    transition: transform 2.5s, -webkit-transform 2.5s;
+  }
+}
+
+@keyframes rotate2 {
+  from {
+    -webkit-transform: rotate(-40deg) translateX(-100%);
+            transform: rotate(-40deg) translateX(-100%);
+    -webkit-transition: -webkit-transform 2.5s;
+    transition: -webkit-transform 2.5s;
+    transition: transform 2.5s;
+    transition: transform 2.5s, -webkit-transform 2.5s;
+  }
+  to {
+    -webkit-transform: rotate(0deg) translateX(0%);
+            transform: rotate(0deg) translateX(0%);
+    -webkit-transition: -webkit-transform 2.5s;
+    transition: -webkit-transform 2.5s;
+    transition: transform 2.5s;
+    transition: transform 2.5s, -webkit-transform 2.5s;
+  }
+}
+
+.music-card {
+  -webkit-box-shadow: 1px 2.5px 1px rgba(0, 0, 0, 0.6);
+          box-shadow: 1px 2.5px 1px rgba(0, 0, 0, 0.6);
+}
+
+.music-card p {
+  padding: 1rem;
+  font-size: small;
+}
+
+.music-card audio {
+  background-color: #F1F3F4;
+}
+
+.music-card:first-child {
+  margin-top: 10rem;
+}
+
+#music-album {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 0.5rem;
+  padding-bottom: 1rem;
+}
+
+body {
+  width: auto;
+  height: auto;
+  position: absolute;
+  background-image: url("/static/images/gd1.jpg");
+  background-repeat: repeat-y;
+  background-size: cover;
+  background-origin: border-box;
+}
+/*# sourceMappingURL=music.css.map */
