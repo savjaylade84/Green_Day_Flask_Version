@@ -29,6 +29,30 @@
                 </audio>
             {% endfor %}
         </div>
+        <div class="music-card">
+            <img id="music-album" src="{{url_for('static',filename='music/revolutionaryRadio/Revolution Radio.jpg')}}" alt="" srcset="">
+            
+            {% for music in music_record['Revolutionary Radio']%}
+                <p>{{music.title}}</p>
+                <audio controls="controls" id ="song">
+    
+                    <source src="{{url_for('static',filename=music.path)}}" type="audio/mpeg">
+    
+                </audio>
+            {% endfor %}
+        </div>
+        <div class="music-card">
+            <img id="music-album" src="{{url_for('static',filename='music/godFavoriteBand/God Favorite Band.jpg')}}" alt="" srcset="">
+            
+            {% for music in music_record['God Favorite Band']%}
+                <p>{{music.title}}</p>
+                <audio controls="controls" id ="song">
+    
+                    <source src="{{url_for('static',filename=music.path)}}" type="audio/mpeg">
+    
+                </audio>
+            {% endfor %}
+        </div>
     </div>
 </div>
 

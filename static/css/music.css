@@ -20,6 +20,16 @@
           animation: forwards rotate1 6s;
 }
 
+.music-card:nth-child(3) {
+  -webkit-animation: forwards rotate2 6s;
+          animation: forwards rotate2 6s;
+}
+
+.music-card:nth-child(4) {
+  -webkit-animation: forwards rotate1 6s;
+          animation: forwards rotate1 6s;
+}
+
 @-webkit-keyframes rotate1 {
   from {
     -webkit-transform: rotate(40deg) translateX(100%);
@@ -121,6 +131,8 @@
   display: flex;
   padding-top: 0.5rem;
   padding-bottom: 1rem;
+  width: 10rem;
+  height: 10rem;
 }
 
 body {

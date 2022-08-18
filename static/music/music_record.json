@@ -16,8 +16,45 @@
             }
             
         ],
-        "Revolutionary Radio":[],
-        "God Favorite Band":[],
+        "Revolutionary Radio":[
+            {
+                "title":"Somwhere Now",
+                "path":"music/revolutionaryRadio/01 - Somwhere Now.mp3"
+            },{
+                "title":"Bang Bang",
+                "path":"music/revolutionaryRadio/02 - Bang Bang.mp3"
+            },{
+                "title":"Revolution Radio",
+                "path":"music/revolutionaryRadio/03 - Revolution Radio.mp3"
+            },{
+                "title":"Say Goodbye",
+                "path":"music/revolutionaryRadio/04 - Say Goodbye.mp3"
+            },{
+                "title":"Outlaws",
+                "path":"music/revolutionaryRadio/05 - Outlaws.mp3"
+            },{
+                "title":"Bouncing Off The Wall",
+                "path":"music/revolutionaryRadio/06 - Bouncing Off The Wall.mp3"
+            },{
+                "title":"Still Breathing",
+                "path":"music/revolutionaryRadio/07 - Still Breathing.mp3"
+            },{
+                "title":"Youngblood",
+                "path":"music/revolutionaryRadio/08 - Youngblood.mp3"
+            },{
+                "title":"Too Dumb To Die",
+                "path":"music/revolutionaryRadio/09 - Too Dumb To Die.mp3"
+            },{
+                "title":"Troubled Time",
+                "path":"music/revolutionaryRadio/10 - Troubled Time.mp3"
+            },{
+                "title":"Forever Now",
+                "path":"music/revolutionaryRadio/11 - Forever Now.mp3"
+            },{
+                "title":"Ordinary World",
+                "path":"music/revolutionaryRadio/12 - Ordinary World.mp3"
+            }
+        ],
         "Slappy":[
             {
                 "title":"Paper Lanterns",
@@ -31,6 +68,74 @@
             },{
                 "title":"Knowledge",
                 "path":"music/Slappy/04 - Knowledge.mp3"
+            }
+        ],"God Favorite Band":[
+            {
+                "title":"2000 Light Years Away",
+                "path":"music/godFavoriteBand/01 - 2000 Light Years Away.mp3"
+            },{
+                "title":"Longview",
+                "path":"music/godFavoriteBand/02 - Longview.mp3"
+            },{
+                "title":"Welcome To Paradise",
+                "path":"music/godFavoriteBand/03 - Welcome To Paradise.mp3"
+            },{
+                "title":"Basket Case",
+                "path":"music/godFavoriteBand/04 - Basket Case.mp3"
+            },{
+                "title":"When I Come Around",
+                "path":"music/godFavoriteBand/05 - When I Come Around.mp3"
+            },{
+                "title":"She",
+                "path":"music/godFavoriteBand/06 - She.mp3"
+            },{
+                "title":"Brain Stew",
+                "path":"music/godFavoriteBand/07 - Brain Stew.mp3"
+            },{
+                "title":"Hitchin' A Ride",
+                "path":"music/godFavoriteBand/08 - Hitchin' A Ride.mp3"
+            },{
+                "title":"Good Riddance (Time Of Your Life)",
+                "path":"music/godFavoriteBand/09 - Good Riddance (Time Of Your Life).mp3"
+            },{
+                "title":"Minority",
+                "path":"music/godFavoriteBand/10 - Minority.mp3"
+            },{
+                "title":"Warning",
+                "path":"music/godFavoriteBand/11 - Warning.mp3"
+            },{
+                "title":"American Idiot",
+                "path":"music/godFavoriteBand/12 - American Idiot.mp3"
+            },{
+                "title":"Holiday",
+                "path":"music/godFavoriteBand/13 - Holiday.mp3"
+            },{
+                "title":"Boulevard Of Broken Dreams",
+                "path":"music/godFavoriteBand/14 - Boulevard Of Broken Dreams.mp3"
+            },{
+                "title":"Wake Me Up When September Ends",
+                "path":"music/godFavoriteBand/15 - Wake Me Up When September Ends.mp3"
+            },{
+                "title":"Know Your Enemy",
+                "path":"music/godFavoriteBand/16 - Know Your Enemy.mp3"
+            },{
+                "title":"21 Guns",
+                "path":"music/godFavoriteBand/17 - 21 Guns.mp3"
+            },{
+                "title":"Oh Love",
+                "path":"music/godFavoriteBand/18 - Oh Love.mp3"
+            },{
+                "title":"Bang Bang",
+                "path":"music/godFavoriteBand/19 - Bang Bang.mp3"
+            },{
+                "title":"Still Breathing",
+                "path":"music/godFavoriteBand/20 - Still Breathing.mp3"
+            },{
+                "title":"Ordinary World (Feat. Miranda Lambert)",
+                "path":"music/godFavoriteBand/21 - Ordinary World (Feat. Miranda Lambert).mp3"
+            },{
+                "title":"Back In The USA",
+                "path":"music/godFavoriteBand/22 - Back In The USA.mp3"
             }
         ]
 
