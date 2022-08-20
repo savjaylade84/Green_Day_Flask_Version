@@ -16,9 +16,13 @@
 **5.) run the init.py by following one of the commands(choose which work for you).**
 </br>
 ``` py init.py ```
+</br>
 ``` python init.py ```
+</br>
 ``` python3 init.py ```
+</br>
 ``` python <file path>/init.py ```
+</br>
 ``` python3 <file path>/init.py ```
 </br></br>
 **6.) after running successfully it will output a url link that you use to access the website in the browser.**
