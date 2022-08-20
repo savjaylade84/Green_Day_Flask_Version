@@ -2,7 +2,7 @@
   width: auto;
   height: auto;
   position: absolute;
-  background-image: url("/static/images/gd2.png");
+  background-image: url("/static/images/ggd1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-origin: border-box;
@@ -46,14 +46,8 @@
   display: -ms-flexbox;
   display: flex;
   background-color: #258034;
-  -webkit-transform: rotate(5deg);
-          transform: rotate(5deg);
   -webkit-box-shadow: 0.2rem 0.2rem 0.2rem #1f1f1f;
           box-shadow: 0.2rem 0.2rem 0.2rem #1f1f1f;
-  -webkit-transition: -webkit-transform 1.5s ease;
-  transition: -webkit-transform 1.5s ease;
-  transition: transform 1.5s ease;
-  transition: transform 1.5s ease, -webkit-transform 1.5s ease;
 }
 
 .information {
@@ -103,13 +97,172 @@
   transition: background-color 800ms ease;
 }
 
-.contact a:active {
-  -webkit-box-shadow: 0.2rem 0.2rem 0.1rem #1f1f1f;
-          box-shadow: 0.2rem 0.2rem 0.1rem #1f1f1f;
-  -webkit-transition: -webkit-box-shadow 800ms ease;
-  transition: -webkit-box-shadow 800ms ease;
-  transition: box-shadow 800ms ease;
-  transition: box-shadow 800ms ease, -webkit-box-shadow 800ms ease;
+.profile-pic {
+  -webkit-animation: forwards rotateProfile 6s;
+          animation: forwards rotateProfile 6s;
+}
+
+.contact {
+  -webkit-animation: forwards Button 6s;
+          animation: forwards Button 6s;
+}
+
+.information {
+  -webkit-animation: forwards Context 6s;
+          animation: forwards Context 6s;
+}
+
+.information p {
+  -webkit-animation: forwards Text 24s;
+          animation: forwards Text 24s;
+}
+
+@-webkit-keyframes rotateProfile {
+  from {
+    -webkit-transform: scale(0) rotate(60deg);
+            transform: scale(0) rotate(60deg);
+    -webkit-transition: -webkit-transform 2.5s;
+    transition: -webkit-transform 2.5s;
+    transition: transform 2.5s;
+    transition: transform 2.5s, -webkit-transform 2.5s;
+  }
+  to {
+    -webkit-transform: scale(1) rotate(0deg);
+            transform: scale(1) rotate(0deg);
+    -webkit-transition: -webkit-transform 2.5s;
+    transition: -webkit-transform 2.5s;
+    transition: transform 2.5s;
+    transition: transform 2.5s, -webkit-transform 2.5s;
+  }
+}
+
+@keyframes rotateProfile {
+  from {
+    -webkit-transform: scale(0) rotate(60deg);
+            transform: scale(0) rotate(60deg);
+    -webkit-transition: -webkit-transform 2.5s;
+    transition: -webkit-transform 2.5s;
+    transition: transform 2.5s;
+    transition: transform 2.5s, -webkit-transform 2.5s;
+  }
+  to {
+    -webkit-transform: scale(1) rotate(0deg);
+            transform: scale(1) rotate(0deg);
+    -webkit-transition: -webkit-transform 2.5s;
+    transition: -webkit-transform 2.5s;
+    transition: transform 2.5s;
+    transition: transform 2.5s, -webkit-transform 2.5s;
+  }
+}
+
+@-webkit-keyframes Button {
+  from {
+    -webkit-transform: translateX(200%);
+            transform: translateX(200%);
+    -webkit-transition: -webkit-transform 2.5s;
+    transition: -webkit-transform 2.5s;
+    transition: transform 2.5s;
+    transition: transform 2.5s, -webkit-transform 2.5s;
+  }
+  to {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+    -webkit-transition: -webkit-transform 2.5s;
+    transition: -webkit-transform 2.5s;
+    transition: transform 2.5s;
+    transition: transform 2.5s, -webkit-transform 2.5s;
+  }
+}
+
+@keyframes Button {
+  from {
+    -webkit-transform: translateX(200%);
+            transform: translateX(200%);
+    -webkit-transition: -webkit-transform 2.5s;
+    transition: -webkit-transform 2.5s;
+    transition: transform 2.5s;
+    transition: transform 2.5s, -webkit-transform 2.5s;
+  }
+  to {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+    -webkit-transition: -webkit-transform 2.5s;
+    transition: -webkit-transform 2.5s;
+    transition: transform 2.5s;
+    transition: transform 2.5s, -webkit-transform 2.5s;
+  }
+}
+
+@-webkit-keyframes Context {
+  from {
+    -webkit-transform: translateX(-200%) rotate(-60deg);
+            transform: translateX(-200%) rotate(-60deg);
+    -webkit-transition: -webkit-transform 2.5s;
+    transition: -webkit-transform 2.5s;
+    transition: transform 2.5s;
+    transition: transform 2.5s, -webkit-transform 2.5s;
+  }
+  to {
+    -webkit-transform: translateX(0%) rotate(0deg);
+            transform: translateX(0%) rotate(0deg);
+    -webkit-transition: -webkit-transform 2.5s;
+    transition: -webkit-transform 2.5s;
+    transition: transform 2.5s;
+    transition: transform 2.5s, -webkit-transform 2.5s;
+  }
+}
+
+@keyframes Context {
+  from {
+    -webkit-transform: translateX(-200%) rotate(-60deg);
+            transform: translateX(-200%) rotate(-60deg);
+    -webkit-transition: -webkit-transform 2.5s;
+    transition: -webkit-transform 2.5s;
+    transition: transform 2.5s;
+    transition: transform 2.5s, -webkit-transform 2.5s;
+  }
+  to {
+    -webkit-transform: translateX(0%) rotate(0deg);
+            transform: translateX(0%) rotate(0deg);
+    -webkit-transition: -webkit-transform 2.5s;
+    transition: -webkit-transform 2.5s;
+    transition: transform 2.5s;
+    transition: transform 2.5s, -webkit-transform 2.5s;
+  }
+}
+
+@-webkit-keyframes Text {
+  from {
+    opacity: 0;
+    -webkit-transition: -webkit-transform 2.5s;
+    transition: -webkit-transform 2.5s;
+    transition: transform 2.5s;
+    transition: transform 2.5s, -webkit-transform 2.5s;
+  }
+  to {
+    opacity: 1;
+    -webkit-transition: -webkit-transform 2.5s;
+    transition: -webkit-transform 2.5s;
+    transition: transform 2.5s;
+    transition: transform 2.5s, -webkit-transform 2.5s;
+  }
+}
+
+@keyframes Text {
+  from {
+    opacity: 0;
+    -webkit-transition: -webkit-transform 2.5s;
+    transition: -webkit-transform 2.5s;
+    transition: transform 2.5s;
+    transition: transform 2.5s, -webkit-transform 2.5s;
+  }
+  to {
+    opacity: 1;
+    -webkit-transition: -webkit-transform 2.5s;
+    transition: -webkit-transform 2.5s;
+    transition: transform 2.5s;
+    transition: transform 2.5s, -webkit-transform 2.5s;
+  }
 }
 
 @media screen and (min-width: 701px) {

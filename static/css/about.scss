@@ -11,7 +11,7 @@ $greenish:rgba(33, 131, 82, 0.699);
     width: auto;
     height: auto;
     position: absolute;
-    background-image: url('/static/images/gd2.png');
+    background-image: url('/static/images/ggd1.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-origin: border-box;
@@ -44,9 +44,7 @@ $greenish:rgba(33, 131, 82, 0.699);
     margin: 1.5em auto;
     display: flex;
     background-color: $green;
-    transform: rotate(5deg);
     box-shadow:  0.2rem 0.2rem 0.2rem $black;
-    transition: transform 1.5s ease;
 }
 
 .information{
@@ -80,11 +78,69 @@ $greenish:rgba(33, 131, 82, 0.699);
     transition: background-color 800ms ease;
 }
 
-.contact a:active{
-    box-shadow:  0.2rem 0.2rem 0.1rem $black;
-    transition: box-shadow 800ms ease;
+// --------------------[Start - Animation]---------------------------
+
+.profile-pic{
+    animation:forwards rotateProfile 6s;
 }
 
+.contact{
+    animation:forwards Button 6s;
+}
+
+.information{
+    animation:forwards Context 6s;
+}
+
+.information p{
+    animation:forwards Text 24s;
+}
+
+@keyframes rotateProfile {
+    from{
+        transform: scale(0) rotate(60deg);
+        transition: transform 2.5s;
+    }
+    to{
+        transform: scale(1) rotate(0deg);
+        transition: transform 2.5s;
+    }
+}
+
+@keyframes Button{
+    from{
+        transform: translateX(200%);
+        transition: transform 2.5s;
+    }
+    to{
+        transform: translateX(0%);
+        transition: transform 2.5s;
+    }
+}
+
+@keyframes Context{
+    from{
+        transform: translateX(-200%) rotate(-60deg);
+        transition: transform 2.5s;
+    }
+    to{
+        transform: translateX(0%) rotate(0deg);
+        transition: transform 2.5s;
+    }
+}
+
+@keyframes Text{
+    from{
+        opacity: 0;
+        transition: transform 2.5s;
+    }
+    to{
+        opacity: 1;
+        transition: transform 2.5s;
+    }
+}
+
+// --------------------[End - Animation]---------------------------
 
 @media screen and (min-width:701px){
     .card{

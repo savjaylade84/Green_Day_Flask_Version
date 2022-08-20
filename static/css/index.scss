@@ -45,6 +45,8 @@ $white: rgb(219, 215, 215);
     box-shadow:  0.2rem 0.2rem 0.2rem $black;
 }
 
+// --------------------[Start - Animation]---------------------------
+
 .intro-text:first-child{
     animation: forwards rotate1 5s;
 }
@@ -99,4 +101,4 @@ $white: rgb(219, 215, 215);
     animation: forwards logo1 7s;
 }
 
-
+// --------------------[End - Animation]---------------------------

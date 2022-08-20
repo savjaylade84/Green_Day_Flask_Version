@@ -1,1 +1,18 @@
 {% extends "base.html" %}
+
+{% block content %}
+<div class="album">
+    {% for p_image in range(13)%}
+        <span id="picture">
+            <img src="{{url_for('static',filename='images/p{}.jpg'.format(p_image + 1))}}" type="audio/mpeg">
+        </span>
+    {% endfor %}
+    {% for gd_image in range(10)%}
+        <span id="picture">
+            <img src="{{url_for('static',filename='images/gd_{}.jpg'.format(gd_image + 1))}}" type="audio/mpeg">
+        </span>
+    {% endfor %}
+</div>
+<link rel="stylesheet" href="{{url_for('static',filename='css/gallery.css')}}" defer>
+<link rel="stylesheet" href="{{url_for('static',filename='css/index.css')}}" defer>
+{% endblock %}

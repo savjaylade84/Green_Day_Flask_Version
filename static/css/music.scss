@@ -6,6 +6,9 @@
     height: fit-content;
 }
 
+
+// --------------------[Start - Animation]---------------------------
+
 .music-card:nth-child(1){
     animation: forwards rotate2 6s;
 }
@@ -44,7 +47,11 @@
     }
 }
 
+// --------------------[End - Animation]---------------------------
 
+audio{
+    z-index: 999;
+}
 
 .music-card{
     p{
@@ -56,6 +63,7 @@
     }
 
     box-shadow: 1px 2.5px 1px rgba(0,0,0,0.6);
+
 }
 
 .music-card:first-child{
@@ -75,7 +83,7 @@ body{
     width: auto;
     height: auto;
     position: absolute;
-    background-image: url('/static/images/gd1.jpg');
+    background-image: url('/static/images/gd_1.jpg');
     background-repeat: repeat-y;
     background-size: cover;
     background-origin: border-box;

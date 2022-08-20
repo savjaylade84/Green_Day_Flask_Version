@@ -4,9 +4,12 @@
 
 <div class="music-cover">
     <div class="music-list">
+
+
         <div class="music-card">
             <img id="music-album" src="{{url_for('static',filename='music/1000_hours/Folder.jpg')}}" alt="" srcset="">
            
+            <!-- generates all Thousand Hours music list -->
             {% for music in music_record['Thousand Hours']%}
                 <p>{{music.title}}</p>
                 <audio controls="controls" id ="song">
@@ -17,9 +20,11 @@
             {% endfor %}
         </div>
     
+
         <div class="music-card">
             <img id="music-album" src="{{url_for('static',filename='music/Slappy/Folder.jpg')}}" alt="" srcset="">
             
+            <!-- generates all Slappy music list -->
             {% for music in music_record['Slappy']%}
                 <p>{{music.title}}</p>
                 <audio controls="controls" id ="song">
@@ -29,9 +34,12 @@
                 </audio>
             {% endfor %}
         </div>
+
+
         <div class="music-card">
             <img id="music-album" src="{{url_for('static',filename='music/revolutionaryRadio/Revolution Radio.jpg')}}" alt="" srcset="">
             
+            <!-- generates all Revolutionary Radio music list -->
             {% for music in music_record['Revolutionary Radio']%}
                 <p>{{music.title}}</p>
                 <audio controls="controls" id ="song">
@@ -41,9 +49,12 @@
                 </audio>
             {% endfor %}
         </div>
+
+
         <div class="music-card">
             <img id="music-album" src="{{url_for('static',filename='music/godFavoriteBand/God Favorite Band.jpg')}}" alt="" srcset="">
             
+            <!-- generates all GOd Favorite Band music list -->
             {% for music in music_record['God Favorite Band']%}
                 <p>{{music.title}}</p>
                 <audio controls="controls" id ="song">

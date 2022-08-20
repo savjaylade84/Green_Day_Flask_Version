@@ -19,7 +19,8 @@
                         </p>
                     </div>
                     <div class="contact">
-
+                        
+                        <!-- generates all the developer external link buttons -->
                         {% for link in links['account-link']%}
                                 <a target="_blank" rel="noopener noreferrer" href="{{url_for(link.variable)}}">  
                                     {{link.type}} - {{ link.account }} 

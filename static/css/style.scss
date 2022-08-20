@@ -45,7 +45,7 @@ li{
 } 
 
 nav{
-  height:auto;
+  height:fit-content;
   width: auto;
   position:fixed;
   z-index: 1;
@@ -124,7 +124,7 @@ a,.nav-button > p{
 }
 
   
-
+// --------------------[Start - Mobile]---------------------------
 
 @media screen and (max-width:700px){
 
@@ -220,6 +220,10 @@ a,.nav-button > p{
 
 }
 
+// --------------------[End - Mobile]---------------------------
+
+// --------------------[Start - Desktop]---------------------------
+
 @media screen and (min-width:701px){
     .logo-text{
       span{
@@ -236,6 +240,7 @@ a,.nav-button > p{
     .nav-menu-container{
       position: absolute;
       padding: 1.5rem 1rem 0 0;
+      height: fit-content;
     }
     .nav-menu{
       display: flex;
@@ -294,3 +299,5 @@ a,.nav-button > p{
     }
 
 }
+
+// --------------------[End - Desktop]---------------------------

@@ -1,0 +1,60 @@
+#picture{
+    padding: 0.5rem;
+}
+
+#picture img{
+    width:30rem;
+    height:20rem;
+    padding:0.2rem;
+    background-color: rgba($color: #cecece, $alpha: 1);
+    animation: forwards backImg 3s;
+}
+
+// --------------------[Start - Animation]---------------------------
+
+#picture img:hover{
+    animation: forwards growImg 3s;
+}
+
+@keyframes growImg {
+    from{
+        width:30rem;
+        height:20rem;
+        transition: all 3s;
+    }
+    to{
+        width:35rem;
+        height:25rem;
+        transition: all 3s;
+    }
+}
+
+@keyframes backImg {
+    from{
+        width:35rem;
+        height:25rem;
+        transition: all 3s;
+    }
+    to{
+        width:30rem;
+        height:20rem;
+        transition: all 3s;
+    }
+}
+
+// --------------------[End - Animation]---------------------------
+
+.album{
+    display: flex;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-wrap: wrap;
+    flex-basis: 500;
+    justify-content: center;
+    margin-top: 10rem;
+    
+}
+
+
+
+

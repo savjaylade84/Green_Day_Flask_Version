@@ -40,7 +40,9 @@ li {
 }
 
 nav {
-  height: auto;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   width: auto;
   position: fixed;
   z-index: 1;
@@ -241,6 +243,9 @@ footer p a {
   .nav-menu-container {
     position: absolute;
     padding: 1.5rem 1rem 0 0;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
   }
   .nav-menu {
     display: -webkit-box;
