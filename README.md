@@ -16,6 +16,8 @@
 > python3 <file path>/init.py
 #### 6.) after running successfully it will output a url link that you use to access the website in the browser.
 > example: https://127.0.0.1:500
+
 </br></br>
+
 if any issue or concerns in the repository just hit that issue in repository for me to solve it.</br>
 have any concerns or want a little chat with me just email at savjaylade84@gmail.com
