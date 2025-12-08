@@ -31,4 +31,4 @@
 ``` example: https://127.0.0.1:500 ```
 </br></br>
 **if any issue or concerns in the repository just hit that issue in repository for me to solve it.**</br></br>
-**have any concerns or want a little chat with me just email at savjaylade84@gmail.com**
+**have any concerns or want a little chat with me just email at deleonjohnjayson@gmail.com**
